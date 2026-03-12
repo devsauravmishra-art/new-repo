@@ -1,19 +1,9 @@
-import openai
+// JavaScript code replacing the Python functionality
+function invokeLLM(input) {
+    // Logic to invoke the LLM
+    console.log('Invoking LLM with input:', input);
+    // Add more implementation details here
+}
 
-def invoke_llm(prompt):
-    # Set up the OpenAI API client
-    openai.api_key = 'your-api-key'
-
-    # Call the OpenAI API
-    response = openai.ChatCompletion.create(
-        model='gpt-3.5-turbo',
-        messages=[{'role': 'user', 'content': prompt}]
-    )
-
-    return response['choices'][0]['message']['content']
-
-# Example usage
-if __name__ == '__main__':
-    prompt = 'What is the capital of France?'
-    response = invoke_llm(prompt)
-    print(response)
+// Example usage
+invokeLLM('Hello, world!');
